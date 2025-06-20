@@ -1,0 +1,20 @@
+:80 {
+    root * /mnt/aptlantis/webpage/out
+    file_server
+}
+
+aptlantis.net {
+    root * /mnt/aptlantis/webpage/out
+    file_server
+}
+
+https://aptlantis.net {
+    root * /mnt/aptlantis/webpage/out
+    file_server
+}
+
+# Handle IRC over TLS (port 6697)
+:6697 {
+    # This will be handled by the Ergo IRC server directly
+    # Caddy just needs to allow the port through
+    tls /mnt/aptlantis/certs/fullchain.pem /mnt/aptlantis/certs/privkey.pem

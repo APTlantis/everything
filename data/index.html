@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en" data-bss-forced-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>APTlantis – High-Speed Linux Mirrors, ISOs, and Open-Source Tools</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://storage.ko-fi.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' https://aptlantis.net https://www.aptlantis.net data:; connect-src 'self'; font-src 'self'; object-src 'none'; media-src 'self'; frame-src https://ko-fi.com;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+    <meta name="description" content="APTlantis is a blazing-fast Linux mirror hub hosting full repositories, ISOs, and open-source packages for the global FOSS community. Built for speed. Powered by Hetzner.">
+    <meta name="keywords" content="APTlantis, Linux mirrors, Linux ISOs, open-source downloads, Debian mirror, Fedora mirror, Arch mirror, Linux repos, FOSS archive, open source hosting">
+    <meta name="author" content="APTlantis Team">
+    <meta name="robots" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="language" content="English">
+    <meta name="rating" content="General">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="APTlantis – High-Speed Linux Mirrors &amp; ISOs">
+    <meta property="og:description" content="APTlantis provides lightning-fast access to Linux repos, ISO downloads, and open-source archives. Mirror. Test. Build.">
+    <meta property="og:url" content="https://aptlantis.net/">
+    <meta property="og:image" content="https://aptlantis.net/assets/images/preview.jpeg">
+    <meta property="og:image:alt" content="APTlantis Logo and Banner">
+    <meta property="og:site_name" content="APTlantis">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@APTlantis">
+    <meta name="twitter:creator" content="@APTlantis">
+    <meta name="twitter:title" content="APTlantis – High-Speed Linux Mirrors &amp; ISOs">
+    <meta name="twitter:description" content="Blazing-fast Linux mirror hub hosting full repositories, ISOs, and open-source packages.">
+    <meta name="twitter:image" content="https://aptlantis.net/assets/images/preview.jpeg">
+    <meta name="twitter:image:alt" content="APTlantis Logo and Banner">
+    <meta name="theme-color" content="#72a4f2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="APTlantis">
+    <meta name="application-name" content="APTlantis">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles-1.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-2.css">
+</head>
+
+<body>
+    <header><img src="assets/img/og-usb-preview.jpeg" width="500" height="500" alt="APTlantis Banner" class="banner-image">
+        <nav class="main-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="docs/readme.html">About</a></li>
+                <li><a href="docs/faq.html">FAQ</a></li>
+                <li><a href="docs/rsync-instructions.html">Rsync Guide</a></li>
+                <li><a href="docs/what-are-launchpacks.html">Launchpacks</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section aria-labelledby="rsync-command">
+        <h2 id="rsync-command" class="rsync-url">rsync -av --progress --delete rsync://mirrors.aptlantis.net/</h2>
+    </section>
+    <div id="distroGrid" role="grid" aria-label="Available Linux distributions">
+        <div class="distro-card">
+            <h5 class="card-title">Resources &amp; Tools</h5><a href="https://flathub.org" target="_blank" class="iso-button cyan">Flathub – Linux App Store</a><a href="https://linuxmint.com" target="_blank" class="iso-button lime">Linux Mint Homepage</a><a href="https://archlinux.org/wiki" target="_blank" class="iso-button magenta">Arch Wiki</a><a href="https://explainshell.com" target="_blank" class="iso-button aqua">ExplainShell – Bash Help</a><a href="https://tldr.sh" target="_blank" class="iso-button pink">TLDR Pages</a>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Power CLI &amp; Dev Tools</h5><a href="https://cheat.sh" target="_blank" class="iso-button pink">cheat.sh – CLI Cheatsheets</a><a href="https://github.com/BurntSushi/ripgrep" target="_blank" class="iso-button cyan">ripgrep – Super Fast grep</a><a href="https://neovim.io" target="_blank" class="iso-button magenta">Neovim – Modern Vim</a><a href="https://direnv.net" target="_blank" class="iso-button lime">direnv – Env for Devs</a><a href="https://ohmyz.sh" target="_blank" class="iso-button aqua">Oh My Zsh – Shell Framework</a>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Linux Documentation</h5><a href="https://wiki.archlinux.org" target="_blank" class="iso-button cyan">Arch Wiki</a><a href="https://help.ubuntu.com" target="_blank" class="iso-button lime">Ubuntu Docs</a><a href="https://www.kernel.org/doc/html/latest/" target="_blank" class="iso-button magenta">Kernel Docs</a><a href="https://tldp.org" target="_blank" class="iso-button aqua">Linux Documentation Project</a><a href="https://linuxjourney.com" target="_blank" class="iso-button pink">Linux Journey</a>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Security Tools</h5><a href="https://www.wireshark.org" target="_blank" class="iso-button pink">Wireshark</a><a href="https://www.metasploit.com" target="_blank" class="iso-button cyan">Metasploit</a><a href="https://www.kali.org/tools" target="_blank" class="iso-button magenta">Kali Tools</a><a href="https://www.openwall.com/john" target="_blank" class="iso-button lime">John the Ripper</a><a href="https://nmap.org" target="_blank" class="iso-button aqua">Nmap</a>
+        </div>
+        <div class="distro-card" role="gridcell" aria-labelledby="almalinux-title">
+            <h5 id="almalinux-title" class="card-title">AlmaLinux</h5>
+            <p class="card-text"> AlmaLinux is a community-driven, enterprise-grade Linux distribution, designed to be a free, open-source replacement for CentOS. </p><a href="https://almalinux.org" target="_blank" class="iso-button cyan" aria-label="Visit AlmaLinux website">Visit AlmaLinux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/almalinux/" aria-label="Copy AlmaLinux rsync command to clipboard">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Alpine Linux</h5>
+            <p class="card-text"> Alpine Linux is a security-oriented, lightweight Linux distribution based on musl libc and busybox, designed for power users. </p><a href="https://alpinelinux.org" target="_blank" class="iso-button magenta">Visit Alpine</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/alpine/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Arch Linux</h5>
+            <p class="card-text"> Arch Linux is a lightweight, flexible Linux distribution that follows a rolling-release model and a "keep it simple" philosophy. </p><a href="https://archlinux.org" target="_blank" class="iso-button lime">Visit Arch Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/archlinux/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Artix Linux</h5>
+            <p class="card-text"> Artix Linux is a systemd-free Arch-based Linux distribution that provides init freedom with OpenRC, runit, s6, or dinit. </p><a href="https://artixlinux.org" target="_blank" class="iso-button aqua">Visit Artix Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/artixlinux/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Athena Linux</h5>
+            <p class="card-text"> Athena is a lightweight Linux operating system tailored for cloud-native environments and secure computing. </p><a href="https://athenaos.org" target="_blank" class="iso-button pink">Visit Athena OS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/athena/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Athena ISOs</h5>
+            <p class="card-text"> Official ISO images for Athena OS, providing a base installation for secure and cloud-optimized environments. </p><a href="https://athenaos.org" target="_blank" class="iso-button cyan">Visit Athena OS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/athena-images/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">BackBox Linux</h5>
+            <p class="card-text"> BackBox Linux is an Ubuntu-based distribution designed for penetration testing, security assessment, and ethical hacking. </p><a href="https://www.backbox.org" target="_blank" class="iso-button lime">Visit BackBox Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/backbox/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">BlackArch Linux</h5>
+            <p class="card-text"> BlackArch is an Arch Linux-based penetration testing distribution for security researchers and ethical hackers. </p><a href="https://www.blackarch.org" target="_blank" class="iso-button magenta">Visit BlackArch Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/blackarch/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-blackarch" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">BlackArch ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/blackarch/blackarch-linux-live-2023.06.01-x86_64.iso" target="_blank">blackarch-linux-live-2023.06.01-x86_64.iso</a></li>
+                    <li><a href="/blackarch/blackarch-netinst-2023.06.01-x86_64.iso" target="_blank">blackarch-netinst-2023.06.01-x86_64.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Calculate Linux</h5>
+            <p class="card-text"> Calculate Linux is a Gentoo-based distribution optimized for rapid deployment in corporate environments. </p><a href="https://www.calculate-linux.org" target="_blank" class="iso-button pink">Visit Calculate Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/calculate/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-calculate" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Calculate Linux ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/calculate/calculate-linux-desktop-23.0.1-x86_64.iso" target="_blank">calculate-linux-desktop-23.0.1-x86_64.iso</a></li>
+                    <li><a href="/calculate/calculate-linux-server-23.0.1-x86_64.iso" target="_blank">calculate-linux-server-23.0.1-x86_64.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Debian ISOs</h5>
+            <p class="card-text"> Debian is a universal operating system, renowned for its stability, security, and massive software ecosystem. </p><a href="https://www.debian.org" target="_blank" class="iso-button lime">Visit Debian</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/debian/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-debian" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Debian ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/debian/debian-12.1.0-amd64-netinst.iso" target="_blank">debian-12.1.0-amd64-netinst.iso</a></li>
+                    <li><a href="/debian/debian-12.1.0-amd64-DVD-1.iso" target="_blank">debian-12.1.0-amd64-DVD-1.iso</a></li>
+                    <li><a href="/debian/debian-edu-12.1.0-amd64-netinst.iso" target="_blank">debian-edu-12.1.0-amd64-netinst.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Deepin</h5>
+            <p class="card-text"> Deepin is a visually stunning Linux distribution featuring its own Deepin Desktop Environment and a user-focused design. </p><a href="https://www.deepin.org/en/" target="_blank" class="iso-button aqua">Visit Deepin</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/deepin/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Deepin ISOs</h5>
+            <p class="card-text"> Official Deepin ISO images, offering a streamlined experience with a polished interface and essential software out of the box. </p><a href="https://www.deepin.org/en/" target="_blank" class="iso-button pink">Visit Deepin</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/deepin-isos/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-deepin" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Deepin ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/deepin-isos/deepin-desktop-community-23-amd64.iso" target="_blank">deepin-desktop-community-23-amd64.iso</a></li>
+                    <li><a href="/deepin-isos/deepin-desktop-community-20.9-amd64.iso" target="_blank">deepin-desktop-community-20.9-amd64.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Devuan</h5>
+            <p class="card-text"> Devuan is a Debian fork that avoids systemd, offering a more traditional init system such as sysvinit or runit. </p><a href="https://www.devuan.org" target="_blank" class="iso-button magenta">Visit Devuan</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/devuan/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Devuan CD</h5>
+            <p class="card-text"> Devuan installable ISO images featuring stable non-systemd Linux environments. </p><a href="https://www.devuan.org" target="_blank" class="iso-button lime">Visit Devuan</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/devuan-cd/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-devuan" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Devuan ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/devuan-cd/devuan_daedalus_5.0.0_amd64_desktop-live.iso" target="_blank">devuan_daedalus_5.0.0_amd64_desktop-live.iso</a></li>
+                    <li><a href="/devuan-cd/devuan_daedalus_5.0.0_amd64_netinstall.iso" target="_blank">devuan_daedalus_5.0.0_amd64_netinstall.iso</a></li>
+                    <li><a href="/devuan-cd/devuan_daedalus_5.0.0_amd64_minimal-live.iso" target="_blank">devuan_daedalus_5.0.0_amd64_minimal-live.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Endless OS ISOs</h5>
+            <p class="card-text"> Endless OS is a Linux distribution built for offline internet use, focused on education and accessibility. </p><a href="https://endlessos.com" target="_blank" class="iso-button aqua">Visit Endless OS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/endlessos-isos/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-endless" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Endless OS ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/endlessos-isos/eos-amd64-5.0.0.iso" target="_blank">eos-amd64-5.0.0.iso</a></li>
+                    <li><a href="/endlessos-isos/eos-base-amd64-5.0.0.iso" target="_blank">eos-base-amd64-5.0.0.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">EndeavourOS</h5>
+            <p class="card-text"> EndeavourOS is a user-friendly Arch-based rolling-release distro with a focus on simplicity and community. </p><a href="https://endeavouros.com" target="_blank" class="iso-button cyan">Visit EndeavourOS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/endeavouros/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-endeavouros" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">EndeavourOS ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/endeavouros/EndeavourOS_Cassini_Nova-03-2023_R1.iso" target="_blank">EndeavourOS_Cassini_Nova-03-2023_R1.iso</a></li>
+                    <li><a href="/endeavouros/EndeavourOS_Cassini_Nova-03-2023_R2.iso" target="_blank">EndeavourOS_Cassini_Nova-03-2023_R2.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">FreeBSD</h5>
+            <p class="card-text"> FreeBSD is a powerful operating system derived from BSD, known for advanced networking, performance, and security features. </p><a href="https://www.freebsd.org" target="_blank" class="iso-button red">Visit FreeBSD</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/freebsd/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Gentoo</h5>
+            <p class="card-text"> Gentoo is a flexible source-based Linux distribution known for performance optimization and complete customization. </p><a href="https://www.gentoo.org" target="_blank" class="iso-button purple">Visit Gentoo</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/gentoo/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Kali Linux</h5>
+            <p class="card-text"> Kali Linux is a Debian-derived distribution designed for digital forensics and penetration testing. </p><a href="https://www.kali.org" target="_blank" class="iso-button yellow">Visit Kali Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/kali/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Kali Images</h5>
+            <p class="card-text"> Official Kali Linux ISO builds for offline installation and forensic boot environments. </p><a href="https://www.kali.org" target="_blank" class="iso-button green">Visit Kali Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/kali-images/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-kali" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Kali Linux ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/kali-images/kali-linux-2023.3-installer-amd64.iso" target="_blank">kali-linux-2023.3-installer-amd64.iso</a></li>
+                    <li><a href="/kali-images/kali-linux-2023.3-live-amd64.iso" target="_blank">kali-linux-2023.3-live-amd64.iso</a></li>
+                    <li><a href="/kali-images/kali-linux-2023.3-installer-netinst-amd64.iso" target="_blank">kali-linux-2023.3-installer-netinst-amd64.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Knoppix DVD</h5>
+            <p class="card-text"> Knoppix is one of the original live Linux distributions, designed to boot and run entirely from removable media. </p><a href="http://www.knoppix.org" target="_blank" class="iso-button blue">Visit Knoppix</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/knoppix-dvd/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">KolibriOS</h5>
+            <p class="card-text"> KolibriOS is a tiny open-source operating system written in assembly language, requiring minimal system resources. </p><a href="https://kolibrios.org" target="_blank" class="iso-button orange">Visit KolibriOS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/kolibrios/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Kubuntu ISOs</h5>
+            <p class="card-text"> Kubuntu combines Ubuntu’s core system with the KDE Plasma desktop, offering a modern and customizable environment. </p><a href="https://kubuntu.org" target="_blank" class="iso-button blue">Visit Kubuntu</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/kubuntu-isos/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Linux Mint</h5>
+            <p class="card-text"> Linux Mint is a popular Ubuntu-based distribution focused on ease of use, stability, and a familiar desktop experience. </p><a href="https://linuxmint.com" target="_blank" class="iso-button purple">Visit Linux Mint</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/linuxmint/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Linux Mint Images</h5>
+            <p class="card-text"> Official ISO releases for Linux Mint, offering Cinnamon, MATE, and XFCE desktop environments. </p><a href="https://linuxmint.com" target="_blank" class="iso-button red">Visit Linux Mint</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/linuxmint-images/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-linuxmint" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Linux Mint ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/linuxmint-images/linuxmint-21.2-cinnamon-64bit.iso" target="_blank">linuxmint-21.2-cinnamon-64bit.iso</a></li>
+                    <li><a href="/linuxmint-images/linuxmint-21.2-mate-64bit.iso" target="_blank">linuxmint-21.2-mate-64bit.iso</a></li>
+                    <li><a href="/linuxmint-images/linuxmint-21.2-xfce-64bit.iso" target="_blank">linuxmint-21.2-xfce-64bit.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Manjaro</h5>
+            <p class="card-text"> Manjaro is an Arch-based user-friendly distribution offering powerful, up-to-date software with an easy installation process. </p><a href="https://manjaro.org" target="_blank" class="iso-button green">Visit Manjaro</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/manjaro/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">MX Linux</h5>
+            <p class="card-text"> MX Linux is a cooperative venture between antiX and former MEPIS communities, designed as a midweight, stable, user-friendly distribution. </p><a href="https://mxlinux.org" target="_blank" class="iso-button orange">Visit MX Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/mx-linux/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">MX Linux ISOs</h5>
+            <p class="card-text"> Official ISO releases for MX Linux, including standard, AHS, and Fluxbox editions. </p><a href="https://mxlinux.org" target="_blank" class="iso-button yellow">Visit MX Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/mxlinux-isos/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-mxlinux" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">MX Linux ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/mxlinux-isos/MX-23_x64.iso" target="_blank">MX-23_x64.iso</a></li>
+                    <li><a href="/mxlinux-isos/MX-23-fluxbox_x64.iso" target="_blank">MX-23-fluxbox_x64.iso</a></li>
+                    <li><a href="/mxlinux-isos/MX-23-KDE_x64.iso" target="_blank">MX-23-KDE_x64.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">OpenMandriva</h5>
+            <p class="card-text"> OpenMandriva is a user-friendly and cutting-edge Linux distribution developed by the OpenMandriva Association. </p><a href="https://www.openmandriva.org" target="_blank" class="iso-button purple">Visit OpenMandriva</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/openmandriva/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">openSUSE</h5>
+            <p class="card-text"> openSUSE is a community-driven project that provides powerful tools for developers and sysadmins with the YaST installer and Tumbleweed/Leap options. </p><a href="https://www.opensuse.org" target="_blank" class="iso-button green">Visit openSUSE</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/open-suse/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-opensuse" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">openSUSE ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/open-suse/distribution/leap-15.5/iso/openSUSE-Leap-15.5-DVD-x86_64-Current.iso" target="_blank">openSUSE-Leap-15.5-DVD-x86_64-Current.iso</a></li>
+                    <li><a href="/open-suse/distribution/leap-15.5/iso/openSUSE-Leap-15.5-NET-x86_64-Current.iso" target="_blank">openSUSE-Leap-15.5-NET-x86_64-Current.iso</a></li>
+                    <li><a href="/open-suse/tumbleweed/iso/openSUSE-Tumbleweed-DVD-x86_64-Current.iso" target="_blank">openSUSE-Tumbleweed-DVD-x86_64-Current.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">OpenBSD</h5>
+            <p class="card-text"> OpenBSD is a security-focused UNIX-like operating system known for its code correctness and proactive security features. </p><a href="https://www.openbsd.org" target="_blank" class="iso-button purple">Visit OpenBSD</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/openbsd/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Parrot Security</h5>
+            <p class="card-text"> Parrot Security is a Debian-based distribution for penetration testing, digital forensics, and privacy protection. </p><a href="https://www.parrotsec.org" target="_blank" class="iso-button red">Visit Parrot</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/parrot/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-parrot" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Parrot Security ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/parrot/iso/parrot-security-5.3_amd64.iso" target="_blank">parrot-security-5.3_amd64.iso</a></li>
+                    <li><a href="/parrot/iso/parrot-home-5.3_amd64.iso" target="_blank">parrot-home-5.3_amd64.iso</a></li>
+                    <li><a href="/parrot/iso/parrot-architect-5.3_amd64.iso" target="_blank">parrot-architect-5.3_amd64.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">PCLinuxOS ISOs</h5>
+            <p class="card-text"> PCLinuxOS is a user-friendly Linux distribution with a rolling-release model, known for its simplicity and performance. </p><a href="https://www.pclinuxos.com" target="_blank" class="iso-button blue">Visit PCLinuxOS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/pclinux-cd/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Puppy Linux</h5>
+            <p class="card-text"> Puppy Linux is a lightweight Linux distribution designed to run entirely in RAM and ideal for older or limited-resource hardware. </p><a href="https://puppylinux.com" target="_blank" class="iso-button yellow">Visit Puppy Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/puppylinux/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Qubes OS</h5>
+            <p class="card-text"> Qubes OS is a security-focused desktop operating system that uses Xen-based virtualization to compartmentalize applications. </p><a href="https://www.qubes-os.org" target="_blank" class="iso-button orange">Visit Qubes OS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/qubes/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">RavynOS</h5>
+            <p class="card-text"> RavynOS is a BSD-based operating system aiming to be compatible with macOS applications while preserving Unix simplicity. </p><a href="https://www.ravynos.com" target="_blank" class="iso-button green">Visit RavynOS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/ravynos/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">ReactOS</h5>
+            <p class="card-text"> ReactOS is an open-source operating system intended to be binary-compatible with Windows applications and drivers. </p><a href="https://reactos.org" target="_blank" class="iso-button yellow">Visit ReactOS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/reactos/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Redcore Linux</h5>
+            <p class="card-text"> Redcore Linux is a Gentoo-based distribution designed to bring the power of Gentoo to the average user with a fast install process. </p><a href="https://redcorelinux.org" target="_blank" class="iso-button red">Visit Redcore</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/redcore-linux/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Rocky Linux</h5>
+            <p class="card-text"> Rocky Linux is a community-driven enterprise OS designed as a downstream build of RHEL to replace CentOS. </p><a href="https://rockylinux.org" target="_blank" class="iso-button green">Visit Rocky Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/rockylinux/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Slackware</h5>
+            <p class="card-text"> Slackware is one of the oldest actively maintained Linux distributions, known for its simplicity and Unix-like design. </p><a href="https://www.slackware.com" target="_blank" class="iso-button yellow">Visit Slackware</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/slackware/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Slackware ISOs</h5>
+            <p class="card-text"> Official ISO releases for Slackware Linux, including full install DVDs and network boot options. </p><a href="https://www.slackware.com" target="_blank" class="iso-button purple">Visit Slackware</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/slackware-isos/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-slackware" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Slackware ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/slackware-isos/slackware64-15.0-install-dvd.iso" target="_blank">slackware64-15.0-install-dvd.iso</a></li>
+                    <li><a href="/slackware-isos/slackware-15.0-install-dvd.iso" target="_blank">slackware-15.0-install-dvd.iso</a></li>
+                    <li><a href="/slackware-isos/slackware64-current-install-dvd.iso" target="_blank">slackware64-current-install-dvd.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Trisquel ISOs</h5>
+            <p class="card-text"> Trisquel is a fully free software Linux distribution endorsed by the Free Software Foundation, based on Ubuntu. </p><a href="https://trisquel.info" target="_blank" class="iso-button blue">Visit Trisquel</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/trisquel-isos/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">TurnKey Linux</h5>
+            <p class="card-text"> TurnKey Linux provides pre-integrated software appliance ISOs for common server use cases like LAMP, WordPress, and more. </p><a href="https://www.turnkeylinux.org" target="_blank" class="iso-button blue">Visit TurnKey Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/turnkeylinux/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Ubuntu Images</h5>
+            <p class="card-text"> Official ISO builds of Ubuntu including desktop, server, cloud, and minimal images across versions. </p><a href="https://ubuntu.com" target="_blank" class="iso-button orange">Visit Ubuntu</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/ubuntu-images/">Copy to Clipboard</button>
+        </div>
+        <div id="panel-ubuntu" class="floating-panel">
+            <div class="panel-header"><span class="panel-title">Ubuntu ISOs</span><button class="close-btn">×</button></div>
+            <div class="panel-body">
+                <ul>
+                    <li><a href="/ubuntu-images/ubuntu-23.04-desktop-amd64.iso" target="_blank">ubuntu-23.04-desktop-amd64.iso</a></li>
+                    <li><a href="/ubuntu-images/ubuntu-23.04-live-server-amd64.iso" target="_blank">ubuntu-23.04-live-server-amd64.iso</a></li>
+                    <li><a href="/ubuntu-images/ubuntu-22.04.3-desktop-amd64.iso" target="_blank">ubuntu-22.04.3-desktop-amd64.iso</a></li>
+                    <li><a href="/ubuntu-images/ubuntu-22.04.3-live-server-amd64.iso" target="_blank">ubuntu-22.04.3-live-server-amd64.iso</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Void Linux</h5>
+            <p class="card-text"> Void Linux is an independent rolling-release distribution known for its runit init system and binary package management via XBPS. </p><a href="https://voidlinux.org" target="_blank" class="iso-button yellow">Visit Void Linux</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/voidlinux/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Whonix</h5>
+            <p class="card-text"> Whonix is a security and anonymity-focused operating system that routes all traffic through Tor and uses isolated virtual machines. </p><a href="https://www.whonix.org" target="_blank" class="iso-button purple">Visit Whonix</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/whonix/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Xubuntu Releases</h5>
+            <p class="card-text"> Xubuntu is a lightweight, stable Ubuntu variant using the XFCE desktop environment, suitable for older hardware. </p><a href="https://xubuntu.org" target="_blank" class="iso-button blue">Visit Xubuntu</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/xubuntu-releases/">Copy to Clipboard</button>
+        </div>
+        <div class="distro-card">
+            <h5 class="card-title">Zorin OS</h5>
+            <p class="card-text"> Zorin OS is a beginner-friendly Linux distro designed to replace Windows and macOS with a familiar interface and strong performance. </p><a href="https://zorin.com/os/" target="_blank" class="iso-button green">Visit Zorin OS</a><button class="iso-button copy-button" data-rsync="rsync -av --progress --delete rsync://mirrors.aptlantis.net/zorin/">Copy to Clipboard</button>
+        </div>
+    </div>
+    <div class="kofi-button-container"><script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script><script type="text/javascript">
+      kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'S6S31D55CR');
+      kofiwidget2.draw();
+    </script></div>
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About APTlantis</h3>
+                <p>APTlantis provides lightning-fast access to Linux repos, ISO downloads, and open-source archives. Our mission is to support the global FOSS community with reliable, high-speed mirrors.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="docs/readme.html">About</a></li>
+                    <li><a href="docs/faq.html">FAQ</a></li>
+                    <li><a href="docs/rsync-instructions.html">Rsync Guide</a></li>
+                    <li><a href="docs/what-are-launchpacks.html">Launchpacks</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Popular Distros</h3>
+                <ul></ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Have questions or need help?</p>
+                <p>Email: <a href="mailto:support@aptlantis.net">support@aptlantis.net</a></p>
+            </div>
+        </div>
+        <div class="social-links"><a href="https://twitter.com/APTlantis" target="_blank" rel="noopener" aria-label="Twitter">🐦</a><a href="https://github.com/APTlantis" target="_blank" rel="noopener" aria-label="GitHub">🐙</a><a href="https://ko-fi.com/S6S31D55CR" target="_blank" rel="noopener" aria-label="Ko-fi">☕</a></div>
+        <div class="footer-bottom">
+            <p>© 2025 APTlantis. All rights reserved.</p>
+            <p>Powered by <a href="https://www.hetzner.com" target="_blank" rel="noopener">Hetzner</a></p>
+        </div>
+    </footer><script>
+    // Panel management functions
+    function openPanel(panelId) {
+      const panel = document.getElementById(`panel-${panelId}`);
+      if (panel) {
+        // Calculate center position before showing the panel
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+
+        // Show the panel
+        panel.style.display = 'block';
+
+        // Make panel draggable
+        panel.classList.add('draggable');
+
+        // Position the panel - use saved position or center it
+        const savedX = panel.getAttribute('data-x');
+        const savedY = panel.getAttribute('data-y');
+
+        if (savedX && savedY) {
+          // Use saved position
+          panel.style.transform = 'none';
+          panel.style.left = savedX + 'px';
+          panel.style.top = savedY + 'px';
+        } else {
+          // Calculate center position
+          const panelWidth = panel.offsetWidth;
+          const panelHeight = panel.offsetHeight;
+          const centerX = Math.max(0, (viewportWidth - panelWidth) / 2);
+          const centerY = Math.max(0, (viewportHeight - panelHeight) / 2);
+
+          // Set position directly without using transform
+          panel.style.transform = 'none';
+          panel.style.left = centerX + 'px';
+          panel.style.top = centerY + 'px';
+
+          // Save this position
+          panel.setAttribute('data-x', centerX);
+          panel.setAttribute('data-y', centerY);
+        }
+
+        // Bring panel to front
+        panel.style.zIndex = 1001;
+      }
+    }
+
+    function closePanel(panelId) {
+      const panel = document.getElementById(panelId);
+      if (panel) {
+        panel.style.display = 'none'; // Hide the panel
+      }
+    }
+
+    // Removed minimizePanel function as it's no longer needed
+
+    function downloadFile(url, filename) {
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    // Initialize panel functionality when the DOM is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all floating panels
+      const panels = document.querySelectorAll('.floating-panel');
+
+      panels.forEach(panel => {
+        // Removed custom resize handle - using browser's native resize functionality
+
+        // Update panel header with close button
+        const panelHeader = panel.querySelector('.panel-header');
+        const closeBtn = panel.querySelector('.close-btn');
+
+        if (panelHeader && closeBtn) {
+          // Update close button styling
+          closeBtn.className = 'panel-btn close-btn';
+          closeBtn.title = "Close panel";
+        }
+
+        // Make panel draggable
+        makeDraggable(panel);
+
+        // Add a tooltip to the header
+        if (panelHeader) {
+          panelHeader.title = "Drag to move panel";
+        }
+      });
+
+      // Add keyboard support for closing panels with Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          const visiblePanels = document.querySelectorAll('.floating-panel[style*="display: block"]');
+          if (visiblePanels.length > 0) {
+            // Close the last opened panel
+            closePanel(visiblePanels[visiblePanels.length - 1].id);
+          }
+        }
+      });
+    });
+
+    // Make an element draggable with improved functionality
+    function makeDraggable(element) {
+      let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+      let isDragging = false;
+
+      // Get the header element to use as drag handle
+      const header = element.querySelector('.panel-header');
+
+      if (header) {
+        header.addEventListener('mousedown', dragMouseDown);
+        header.addEventListener('touchstart', dragTouchStart, { passive: false });
+      } else {
+        element.addEventListener('mousedown', dragMouseDown);
+        element.addEventListener('touchstart', dragTouchStart, { passive: false });
+      }
+
+      function dragMouseDown(e) {
+        // Skip if we're clicking on a button in the header
+        if (e.target.tagName === 'BUTTON') {
+          return;
+        }
+
+        e.preventDefault();
+        startDrag(e.clientX, e.clientY);
+
+        // Add event listeners
+        document.addEventListener('mouseup', closeDragElement);
+        document.addEventListener('mousemove', elementDrag);
+      }
+
+      function dragTouchStart(e) {
+        // Skip if we're touching a button in the header
+        if (e.target.tagName === 'BUTTON') {
+          return;
+        }
+
+        e.preventDefault();
+        const touch = e.touches[0];
+        startDrag(touch.clientX, touch.clientY);
+
+        // Add event listeners
+        document.addEventListener('touchend', closeTouchDragElement);
+        document.addEventListener('touchcancel', closeTouchDragElement);
+        document.addEventListener('touchmove', elementTouchDrag, { passive: false });
+      }
+
+      function startDrag(clientX, clientY) {
+        isDragging = true;
+
+        // Bring this panel to the front
+        const allPanels = document.querySelectorAll('.floating-panel');
+        allPanels.forEach(panel => {
+          if (panel !== element) {
+            panel.style.zIndex = 1000;
+          }
+        });
+        element.style.zIndex = 1001;
+
+        // Get the mouse/touch position at startup
+        pos3 = clientX;
+        pos4 = clientY;
+      }
+
+      function elementDrag(e) {
+        if (!isDragging) return;
+        e.preventDefault();
+        moveElement(e.clientX, e.clientY);
+      }
+
+      function elementTouchDrag(e) {
+        if (!isDragging) return;
+        e.preventDefault();
+        const touch = e.touches[0];
+        moveElement(touch.clientX, touch.clientY);
+      }
+
+      function moveElement(clientX, clientY) {
+        // Calculate the new cursor position
+        pos1 = pos3 - clientX;
+        pos2 = pos4 - clientY;
+        pos3 = clientX;
+        pos4 = clientY;
+
+        // Calculate new position
+        let newTop = element.offsetTop - pos2;
+        let newLeft = element.offsetLeft - pos1;
+
+        // Keep panel within viewport bounds
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const panelWidth = element.offsetWidth;
+        const panelHeight = element.offsetHeight;
+
+        // Ensure at least 50px of the panel remains visible
+        newTop = Math.max(-panelHeight + 50, Math.min(newTop, viewportHeight - 50));
+        newLeft = Math.max(-panelWidth + 50, Math.min(newLeft, viewportWidth - 50));
+
+        // Set the element's new position
+        element.style.top = newTop + "px";
+        element.style.left = newLeft + "px";
+
+        // Store the position for reopening
+        element.setAttribute('data-x', newLeft);
+        element.setAttribute('data-y', newTop);
+      }
+
+      function closeDragElement() {
+        isDragging = false;
+        document.removeEventListener('mouseup', closeDragElement);
+        document.removeEventListener('mousemove', elementDrag);
+      }
+
+      function closeTouchDragElement() {
+        isDragging = false;
+        document.removeEventListener('touchend', closeTouchDragElement);
+        document.removeEventListener('touchcancel', closeTouchDragElement);
+        document.removeEventListener('touchmove', elementTouchDrag);
+      }
+    }
+  </script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
